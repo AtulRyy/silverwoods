@@ -1,0 +1,11 @@
+.text-wrapper {
+    opacity: 0;
+    transform: translateX(50vw);
+    transition: transform 1s ease-in-out,opacity 1.5s ease-in-out;
+  }
+  
+  .text-wrapper.show {
+    opacity: 1;
+    transform: translateX(-50%);
+    
+  }

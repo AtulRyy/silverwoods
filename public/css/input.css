@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+    .font-antic-didone {
+        font-family: 'Antic Didone', serif;
+      }
+      .font-beau-rivage {
+        font-family: "Beau Rivage", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
