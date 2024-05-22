@@ -728,6 +728,14 @@ video {
   width: 70%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
