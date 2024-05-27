@@ -10,5 +10,7 @@
         font-weight: 400;
         font-style: normal;
       }
-      
+      .font-jost{
+        font-family: "Jost";
+      }
 }
