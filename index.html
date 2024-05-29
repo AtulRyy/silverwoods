@@ -1,765 +1,1130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Beau+Rivage&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/custom-styles.css" />
+    <link rel="stylesheet" href="./public/css/output.css" />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
-    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Beau+Rivage&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./public/css/animations.css" />
-  <link rel="stylesheet" href="./public/css/custom-styles.css" />
-  <link rel="stylesheet" href="./public/css/output.css" />
-</head>
-
-<body class="">
-  <div class="home-container relative h-screen">
-    <!-- NAVBAR STARTS HERE -->
-    <div class="nav-bar font-antic-didone text-white bg-black bg-opacity-[60%] absolute top-0 left-0 z-50 w-full">
-      <div class="nav-top flex justify-center py-5">
-        <div class="top-cluster w-[95%] flex justify-between items-center">
-          <div class="menu-button rounded-full bg-[#082921] px-8 py-6 text-2xl">
-            <i class="fas fa-bars mr-3"></i>MENU
-          </div>
-          <div class="logo">
-            <img src="./public/images/Logo.png" alt="" />
-          </div>
-          <div class="booking-button rounded-full bg-[#082921] px-8 py-6 text-2xl">
-            <i class="fas fa-bars mr-3"></i>BOOKING
-          </div>
-        </div>
-      </div>
-      <hr class="w-full border-white border-1" />
-      <div class="nav-elements flex justify-center py-8">
-        <div class="nav-items w-[60%] flex justify-between text-2xl">
-          <p>ABOUT</p>
-          <p>ABOUT</p>
-          <p>ABOUT</p>
-          <p>ABOUT</p>
-          <p>ABOUT</p>
-          <p>ABOUT</p>
-        </div>
-      </div>
-    </div>
-    <!-- NAVBAR ENDS HERE -->
-
-    <div class="swiper-container h-screen w-full overflow-clip absolute top-0 left-0">
+  <body class="">
+    <div class="home-container relative h-screen">
+      <!-- NAVBAR STARTS HERE -->
       <div
-        class="check-now-wrapper z-30 flex w-full justify-center my-20 absolute bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-white">
+        class="nav-bar font-antic-didone text-white bg-black bg-opacity-[60%] absolute top-0 left-0 z-50 w-full"
+      >
+        <div class="nav-top flex justify-center py-5">
+          <div class="top-cluster w-[95%] flex justify-between items-center">
+            <div
+              class="menu-button rounded-full bg-[#082921] px-8 py-6 text-2xl"
+            >
+              <i class="fas fa-bars mr-3"></i>MENU
+            </div>
+            <div class="logo">
+              <img src="./public/images/Logo.png" alt="" />
+            </div>
+            <div
+              class="booking-button rounded-full bg-[#082921] px-8 py-6 text-2xl"
+            >
+              <i class="fas fa-bars mr-3"></i>BOOKING
+            </div>
+          </div>
+        </div>
+        <hr class="w-full border-white border-1" />
+        <div class="nav-elements flex justify-center py-8">
+          <div class="nav-items w-[60%] flex justify-between text-2xl">
+            <p>ABOUT</p>
+            <p>ABOUT</p>
+            <p>ABOUT</p>
+            <p>ABOUT</p>
+            <p>ABOUT</p>
+            <p>ABOUT</p>
+          </div>
+        </div>
+      </div>
+      <!-- NAVBAR ENDS HERE -->
+
+      <div
+        class="swiper-container h-screen w-full overflow-clip absolute top-0 left-0"
+      >
         <div
-          class="check-now bg-[#08292199] bg-opacity-[60%] w-[80%] flex justify-between items-center px-20 text-xl font-antic-didone">
-          <div class="section flex justify-center w-full">
-            <button class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3">
-              Check In <i class="fas fa-angle-right"></i>
-            </button>
-          </div>
-          <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
-          <div class="section flex justify-center w-full">
-            <button class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3">
-              Check In <i class="fas fa-angle-right"></i>
-            </button>
-          </div>
-          <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
-
-          <div class="section flex justify-center w-full">
-            <button class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3">
-              Check In <i class="fas fa-angle-right"></i>
-            </button>
-          </div>
-          <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
-
-          <div class="section flex justify-center w-full">
-            <button class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3">
-              Check In <i class="fas fa-angle-right"></i>
-            </button>
-          </div>
-          <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
-
-          <div class="section flex justify-center w-full">
-            <button class="flex justify-center items-center w-full border-2 border-white my-10 p-3">
-              Check Now
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-wrapper">
-        <!-- SLIDES START HERE -->
-
-        <!-- SLIDE STARTS HERE -->
-        <div class="swiper-slide flex items-center justify-center">
-          <div class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"></div>
-          <img src="./public/images/carousel-1.jpg" alt="" class="w-full h-screen" />
-
-          <div class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full">
-            <h1 class="text-7xl leading-[95px] font-antic-didone">
-              Silverwood
-              <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
-              Resort &<br />
-              Hotel The Peak of
-              <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
-            </h1>
-            <div class="w-full flex justify-center">
-              <p class="w-[35%]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
-                possimus molestias vero magnam, quis expedita quod .
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- SLIDE ENDS HERE -->
-
-        <!-- SLIDE STARTS HERE -->
-        <div class="swiper-slide flex items-center justify-center">
-          <div class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"></div>
-          <img src="./public/images/carousel-1.jpg" alt="" class="w-full h-screen" />
-
-          <div class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full">
-            <h1 class="text-7xl font-bold leading-[95px] font-antic-didone">
-              Silverwood
-              <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
-              Resort &<br />
-              Hotel The Peak of
-              <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
-            </h1>
-            <div class="w-full flex justify-center">
-              <p class="w-[35%]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
-                possimus molestias vero magnam, quis expedita quod .
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- SLIDE ENDS HERE -->
-
-        <!-- SLIDE STARTS HERE -->
-        <div class="swiper-slide flex items-center justify-center">
-          <div class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"></div>
-          <img src="./public/images/carousel-1.jpg" alt="" class="w-full h-screen" />
-
-          <div class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full">
-            <h1 class="text-7xl font-bold leading-[95px] font-antic-didone">
-              Silverwood
-              <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
-              Resort &<br />
-              Hotel The Peak of
-              <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
-            </h1>
-            <div class="w-full flex justify-center">
-              <p class="w-[35%]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
-                possimus molestias vero magnam, quis expedita quod .
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- SLIDE ENDS HERE -->
-      </div>
-    </div>
-  </div>
-  <!-- HOME PAGE STOPS HERE -->
-
-  <!-- ABOUT US STARTS HERE -->
-  <div class="about-us-wrapper py-20 flex justify-center">
-    <div class="about-us w-[75%]">
-      <div class="about-heading text-center text-[#AA642B] mb-10">
-        <h2 class="small-heading text-base mb-3">About Us</h2>
-        <h2 class="text-5xl font-antic-didone">
-          Premium <span class="font-beau-rivage">Luxury Resort</span> in
-          Wayanad, Kerala
-        </h2>
-      </div>
-      <div class="about-content-section flex justify-between">
-        <div class="left-section flex-1 mr-10 w-1/2">
-          <div class="relative">
-            <img src="./public/images/about-1.jpg" alt="" class="w-[644px] h-auto" />
-            <img src="./public/images/image_tag.png" class="absolute -bottom-20 left-10" alt="" />
-          </div>
-          <div class="left-bottom flex justify-end font-antic-didone mt-12 pr-10">
-            <div class="vibes mr-10">
-              <h2 class="text-[90px] text-[#AA642B]">98%</h2>
-              <p class="text-2xl">Positive Vibes</p>
-            </div>
-            <div class="Month">
-              <h2 class="text-[90px] text-[#AA642B]">250+</h2>
-              <p class="text-2xl">Booking Month</p>
-            </div>
-          </div>
-        </div>
-        <div class="right-section flex-1 w-1/2">
-          <p class="text-base text-[#818181]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-            est unde cumque iure laborum dolore cupiditate dolorum suscipit
-            commodi reiciendis nostrum, quia qui assumenda voluptatem maiores
-            iusto? Unde, esse blanditiis? Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Voluptatum provident, nihil officiis
-            commodi ipsa animi iste! Voluptate impedit mollitia rem labore,
-            modi, sint, aliquam reprehenderit obcaecati nulla dicta inventore
-            quis.
-          </p>
-          <div class="button text-xl bg-[#082921] py-5 px-10 w-fit text-white my-5">
-            Read More
-          </div>
-          <div class="relative w-fit h-fit">
-            <img src="./public/images/about-video.jpg" alt="" class="w-[1000px] object-cover" />
-            <div class="over-lay w-full h-full absolute top-0 left-0 flex justify-center items-center">
+          class="check-now-wrapper z-30 flex w-full justify-center my-20 absolute bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-white"
+        >
+          <div
+            class="check-now bg-[#08292199] bg-opacity-[60%] w-[80%] flex justify-between items-center px-20 text-xl font-antic-didone"
+          >
+            <div class="section flex justify-center w-full">
               <button
-                class="size-[86px] bg-[#AA642B] rounded-full relative hover:bg-[#b67540] transition-all duration-200 ease-in-out">
-                <i
-                  class="fas fa-play text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"></i>
+                class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3"
+              >
+                Check In <i class="fas fa-angle-right"></i>
               </button>
             </div>
-            <div class="socials absolute bottom-0 right-0 m-10 my-5 text-center">
-              <h2 class="font-antic-didone text-2xl text-white mb-2">
-                Follow Us On
-              </h2>
-              <div class="social-icons text-white text-sm flex justify-between">
-                <a class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center" href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center" href="#">
-                  <i class="fab fab fa-facebook-f"></i>
-                </a>
-                <a class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center" href="#">
-                  <i class="fab fab fa-twitter"></i>
-                </a>
-                <a class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center" href="#">
-                  <i class="fab fab fa-youtube"></i>
-                </a>
+            <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
+            <div class="section flex justify-center w-full">
+              <button
+                class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3"
+              >
+                Check In <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
+
+            <div class="section flex justify-center w-full">
+              <button
+                class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3"
+              >
+                Check In <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
+
+            <div class="section flex justify-center w-full">
+              <button
+                class="flex justify-between items-center w-full border-b-2 border-white my-10 p-3"
+              >
+                Check In <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="verti-line w-[2px] h-[70%] bg-white mx-10"></div>
+
+            <div class="section flex justify-center w-full">
+              <button
+                class="flex justify-center items-center w-full border-2 border-white my-10 p-3"
+              >
+                Check Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-wrapper">
+          <!-- SLIDES START HERE -->
+
+          <!-- SLIDE STARTS HERE -->
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"
+            ></div>
+            <img
+              src="./public/images/carousel-1.jpg"
+              alt=""
+              class="w-full h-screen"
+            />
+
+            <div
+              class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full"
+            >
+              <h1 class="text-7xl leading-[95px] font-antic-didone">
+                Silverwood
+                <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
+                Resort &<br />
+                Hotel The Peak of
+                <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
+              </h1>
+              <div class="w-full flex justify-center">
+                <p class="w-[35%]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
+                  possimus molestias vero magnam, quis expedita quod .
+                </p>
               </div>
             </div>
           </div>
+          <!-- SLIDE ENDS HERE -->
+
+          <!-- SLIDE STARTS HERE -->
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"
+            ></div>
+            <img
+              src="./public/images/carousel-1.jpg"
+              alt=""
+              class="w-full h-screen"
+            />
+
+            <div
+              class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full"
+            >
+              <h1 class="text-7xl font-bold leading-[95px] font-antic-didone">
+                Silverwood
+                <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
+                Resort &<br />
+                Hotel The Peak of
+                <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
+              </h1>
+              <div class="w-full flex justify-center">
+                <p class="w-[35%]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
+                  possimus molestias vero magnam, quis expedita quod .
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE ENDS HERE -->
+
+          <!-- SLIDE STARTS HERE -->
+          <div class="swiper-slide flex items-center justify-center">
+            <div
+              class="tint absolute top-0 left-0 w-full h-full bg-black bg-opacity-[60%]"
+            ></div>
+            <img
+              src="./public/images/carousel-1.jpg"
+              alt=""
+              class="w-full h-screen"
+            />
+
+            <div
+              class="text-wrapper absolute top-1/2 left-1/2 transform text-center text-white w-full"
+            >
+              <h1 class="text-7xl font-bold leading-[95px] font-antic-didone">
+                Silverwood
+                <span class="text-[#AA642B] font-beau-rivage">Luxury</span>
+                Resort &<br />
+                Hotel The Peak of
+                <span class="text-[#AA642B] font-beau-rivage">Comfortably</span>
+              </h1>
+              <div class="w-full flex justify-center">
+                <p class="w-[35%]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque obcaecati unde, harum ut cupiditate odit incidunt nobis
+                  possimus molestias vero magnam, quis expedita quod .
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE ENDS HERE -->
         </div>
       </div>
     </div>
-  </div>
-  <!-- ABOUT US ENDS HERE -->
+    <!-- HOME PAGE STOPS HERE -->
 
-  <!-- ROOM SUITE STARTS HERE -->
-  <div class="room-suite py-10 pb-20">
-    <div class="heading-sectin px-[12.5%] flex justify-between items-center">
-      <div class="heading-left w-1/2">
-        <h2 class="text-base font-jost text-[#AA642B]">Explore</h2>
-        <h2 class="text-white text-5xl font-antic-didone my-3">
-          Room <span class="font-beau-rivage text-[#AA642B]">&</span> Suite
-        </h2>
-        <p class="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div class="button-right">
-        <button class="font-antic-didone text-xl bg-[#AA642B] py-5 px-10 text-white">
-          View All
-        </button>
-      </div>
-    </div>
-    <div class="cards swiper mt-10 w-[77%]">
-      <div class="swiper-wrapper flex">
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room1
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room2
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room3
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room4
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room5
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room6
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room7
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room8
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-        <!-- SINGLE CARD STARTS HERE -->
-        <div class="card swiper-slide flex justify-center items-center">
-          <div class="w-[450px]">
-            <div class="card-image">
-              <img src="./public/images/room-card.jpg" alt="" />
-            </div>
-            <div class="card-title mt-3 flex justify-between">
-              <h1 class="text-[#AA642B] text-2xl font-antic-didone">
-                Luxury Room9
-              </h1>
-              <p class="text-white font-jost">$150/night</p>
-            </div>
-            <p class="w-[70%] font-jost text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod
-            </p>
-            <div class="text-white flex justify-between mt-5">
-              <div class="left-side font-jost flex items-center">
-                <p>250M2</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>6 people</p>
-                <span class="dot mx-2 size-2 rounded-full bg-white"></span>
-                <p>5 Bed</p>
-              </div>
-              <button
-                class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out">
-                Book Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- SINGLE CARD Ends HERE -->
-      </div>
-    </div>
-  </div>
-
-  <!-- ROOM SUITE ENDS HERE -->
-
-  <!-- WHY CHOOSE US STARTS HERE -->
-  <div class="why-choose-us flex justify-center py-20">
-    <div class="w-[75%] flex justify-between">
-      <div class="heading-sectin flex-1">
-        <div class="heading-left">
-          <h2 class="text-base font-jost text-[#AA642B]">Why Choose Us</h2>
-          <h2 class="text-black text-5xl font-antic-didone my-3">
-            Invite
-            <span class="font-beau-rivage text-[#AA642B]">Guest</span> To
-            <span class="font-beau-rivage text-[#AA642B]">Celebrate</span>
-            Life
+    <!-- ABOUT US STARTS HERE -->
+    <div class="about-us-wrapper py-20 flex justify-center">
+      <div class="about-us w-[75%]">
+        <div class="about-heading text-center text-[#AA642B] mb-10">
+          <h2 class="small-heading text-base mb-3">About Us</h2>
+          <h2 class="text-5xl font-antic-didone">
+            Premium <span class="font-beau-rivage">Luxury Resort</span> in
+            Wayanad, Kerala
           </h2>
-          <p class="text-[#818181] text-base font-jost">
+        </div>
+        <div class="about-content-section flex justify-between">
+          <div class="left-section flex-1 mr-10 w-1/2">
+            <div class="relative">
+              <img
+                src="./public/images/about-1.jpg"
+                alt=""
+                class="w-[644px] h-auto"
+              />
+              <img
+                src="./public/images/image_tag.png"
+                class="absolute -bottom-20 left-10"
+                alt=""
+              />
+            </div>
+            <div
+              class="left-bottom flex justify-end font-antic-didone mt-12 pr-10"
+            >
+              <div class="vibes mr-10">
+                <h2 class="text-[90px] text-[#AA642B]">98%</h2>
+                <p class="text-2xl">Positive Vibes</p>
+              </div>
+              <div class="Month">
+                <h2 class="text-[90px] text-[#AA642B]">250+</h2>
+                <p class="text-2xl">Booking Month</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-section flex-1 w-1/2">
+            <p class="text-base text-[#818181]">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+              est unde cumque iure laborum dolore cupiditate dolorum suscipit
+              commodi reiciendis nostrum, quia qui assumenda voluptatem maiores
+              iusto? Unde, esse blanditiis? Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Voluptatum provident, nihil officiis
+              commodi ipsa animi iste! Voluptate impedit mollitia rem labore,
+              modi, sint, aliquam reprehenderit obcaecati nulla dicta inventore
+              quis.
+            </p>
+            <div
+              class="button text-xl bg-[#082921] py-5 px-10 w-fit text-white my-5"
+            >
+              Read More
+            </div>
+            <div class="relative w-fit h-fit">
+              <img
+                src="./public/images/about-video.jpg"
+                alt=""
+                class="w-[1000px] object-cover"
+              />
+              <div
+                class="over-lay w-full h-full absolute top-0 left-0 flex justify-center items-center"
+              >
+                <button
+                  class="size-[86px] bg-[#AA642B] rounded-full relative hover:bg-[#b67540] transition-all duration-200 ease-in-out"
+                >
+                  <i
+                    class="fas fa-play text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"
+                  ></i>
+                </button>
+              </div>
+              <div
+                class="socials absolute bottom-0 right-0 m-10 my-5 text-center"
+              >
+                <h2 class="font-antic-didone text-2xl text-white mb-2">
+                  Follow Us On
+                </h2>
+                <div
+                  class="social-icons text-white text-sm flex justify-between"
+                >
+                  <a
+                    class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center"
+                    href="#"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center"
+                    href="#"
+                  >
+                    <i class="fab fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center"
+                    href="#"
+                  >
+                    <i class="fab fab fa-twitter"></i>
+                  </a>
+                  <a
+                    class="mx-1 rounded-full bg-[#AA642B] size-6 flex justify-center items-center"
+                    href="#"
+                  >
+                    <i class="fab fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT US ENDS HERE -->
+
+    <!-- ROOM SUITE STARTS HERE -->
+    <div class="room-suite py-10 pb-20">
+      <div class="heading-sectin px-[12.5%] flex justify-between items-center">
+        <div class="heading-left w-1/2">
+          <h2 class="text-base font-jost text-[#AA642B]">Explore</h2>
+          <h2 class="text-white text-5xl font-antic-didone my-3">
+            Room <span class="font-beau-rivage text-[#AA642B]">&</span> Suite
+          </h2>
+          <p class="text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="accordion mt-10">
-          <div class="acord-items">
-            <div class="item my-5">
-              <div class="flex">
-                <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
-                <div>
-                  <button class="font-antic-didone text-xl accord-button cursor-pointer">
-                    Stunning Location
-                  </button>
-
-                  <p
-                    class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0">
-                    Situated in a picturesque setting, our resort offers
-                    breathtaking views and serene surroundings.
-                  </p>
+        <div class="button-right">
+          <button
+            class="font-antic-didone text-xl bg-[#AA642B] py-5 px-10 text-white"
+          >
+            View All
+          </button>
+        </div>
+      </div>
+      <div class="cards swiper mt-10 w-[77%]">
+        <div class="swiper-wrapper flex">
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room1
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
                 </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
-            <div class="item my-5">
-              <div class="flex">
-                <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
-                <div>
-                  <button class="font-antic-didone text-xl accord-button cursor-pointer">
-                    Stunning Location
-                  </button>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
 
-                  <p
-                    class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0">
-                    Situated in a picturesque setting, our resort offers
-                    breathtaking views and serene surroundings.
-                  </p>
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room2
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
                 </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
-            <div class="item my-5">
-              <div class="flex">
-                <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
-                <div>
-                  <button class="font-antic-didone text-xl accord-button cursor-pointer">
-                    Stunning Location
-                  </button>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
 
-                  <p
-                    class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0">
-                    Situated in a picturesque setting, our resort offers
-                    breathtaking views and serene surroundings.
-                  </p>
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room3
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
                 </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
-            <div class="item my-5">
-              <div class="flex">
-                <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
-                <div>
-                  <button class="font-antic-didone text-xl accord-button cursor-pointer">
-                    Stunning Location
-                  </button>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
 
-                  <p
-                    class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0">
-                    Situated in a picturesque setting, our resort offers
-                    breathtaking views and serene surroundings.
-                  </p>
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room4
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
                 </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
-            <div class="item my-5">
-              <div class="flex">
-                <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
-                <div>
-                  <button class="font-antic-didone text-xl accord-button cursor-pointer">
-                    Stunning Location
-                  </button>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
 
-                  <p
-                    class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0">
-                    Situated in a picturesque setting, our resort offers
-                    breathtaking views and serene surroundings.
-                  </p>
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room5
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
+                </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room6
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
+                </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room7
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
+                </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room8
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
+                </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
+          <!-- SINGLE CARD STARTS HERE -->
+          <div class="card swiper-slide flex justify-center items-center">
+            <div class="w-[450px]">
+              <div class="card-image">
+                <img src="./public/images/room-card.jpg" alt="" />
+              </div>
+              <div class="card-title mt-3 flex justify-between">
+                <h1 class="text-[#AA642B] text-2xl font-antic-didone">
+                  Luxury Room9
+                </h1>
+                <p class="text-white font-jost">$150/night</p>
+              </div>
+              <p class="w-[70%] font-jost text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div class="text-white flex justify-between mt-5">
+                <div class="left-side font-jost flex items-center">
+                  <p>250M2</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>6 people</p>
+                  <span class="dot mx-2 size-2 rounded-full bg-white"></span>
+                  <p>5 Bed</p>
+                </div>
+                <button
+                  class="border border-white py-3 px-8 text-xl font-antic-didone hover:bg-[#AA642B] transition-all duration-200 ease-in-out"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- SINGLE CARD Ends HERE -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ROOM SUITE ENDS HERE -->
+
+    <!-- WHY CHOOSE US STARTS HERE -->
+    <div class="why-choose-us flex justify-center py-20">
+      <div class="w-[75%] flex justify-between">
+        <div class="heading-sectin flex-1">
+          <div class="heading-left">
+            <h2 class="text-base font-jost text-[#AA642B]">Why Choose Us</h2>
+            <h2 class="text-black text-5xl font-antic-didone my-3">
+              Invite
+              <span class="font-beau-rivage text-[#AA642B]">Guest</span> To
+              <span class="font-beau-rivage text-[#AA642B]">Celebrate</span>
+              Life
+            </h2>
+            <p class="text-[#818181] text-base font-jost">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="accordion mt-10">
+            <div class="acord-items">
+              <div class="item my-5">
+                <div class="flex">
+                  <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
+                  <div>
+                    <button
+                      class="font-antic-didone text-xl accord-button cursor-pointer"
+                    >
+                      Stunning Location
+                    </button>
+
+                    <p
+                      class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0"
+                    >
+                      Situated in a picturesque setting, our resort offers
+                      breathtaking views and serene surroundings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item my-5">
+                <div class="flex">
+                  <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
+                  <div>
+                    <button
+                      class="font-antic-didone text-xl accord-button cursor-pointer"
+                    >
+                      Stunning Location
+                    </button>
+
+                    <p
+                      class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0"
+                    >
+                      Situated in a picturesque setting, our resort offers
+                      breathtaking views and serene surroundings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item my-5">
+                <div class="flex">
+                  <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
+                  <div>
+                    <button
+                      class="font-antic-didone text-xl accord-button cursor-pointer"
+                    >
+                      Stunning Location
+                    </button>
+
+                    <p
+                      class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0"
+                    >
+                      Situated in a picturesque setting, our resort offers
+                      breathtaking views and serene surroundings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item my-5">
+                <div class="flex">
+                  <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
+                  <div>
+                    <button
+                      class="font-antic-didone text-xl accord-button cursor-pointer"
+                    >
+                      Stunning Location
+                    </button>
+
+                    <p
+                      class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0"
+                    >
+                      Situated in a picturesque setting, our resort offers
+                      breathtaking views and serene surroundings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item my-5">
+                <div class="flex">
+                  <i class="fas fa-plus mr-10 text-2xl text-[#AA642B]"></i>
+                  <div>
+                    <button
+                      class="font-antic-didone text-xl accord-button cursor-pointer"
+                    >
+                      Stunning Location
+                    </button>
+
+                    <p
+                      class="text-[#818181] mt-2.5 accord-text transition-all duration-200 ease-in-out overflow-hidden max-h-0"
+                    >
+                      Situated in a picturesque setting, our resort offers
+                      breathtaking views and serene surroundings.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <button
+            class="py-2.5 px-8 border border-[#AA642B] font-antic-didone text-xl text-[#AA642B] mt-10 hover:bg-[#AA642B] hover:text-white transition-all duration-200 ease-in-out"
+          >
+            Explore More
+          </button>
         </div>
-        <button
-          class="py-2.5 px-8 border border-[#AA642B] font-antic-didone text-xl text-[#AA642B] mt-10 hover:bg-[#AA642B] hover:text-white transition-all duration-200 ease-in-out">
-          Explore More
-        </button>
-      </div>
-      <div>
-        <div class="flex-1 ml-20 relative">
-          <img src="./public/images/why-choose-image.jpg" alt="" />
-          <img src="./public/images/TagbigTag.png" class="absolute bottom-0 right-12 " alt="">
+        <div>
+          <div class="flex-1 ml-20 relative">
+            <img src="./public/images/why-choose-image.jpg" alt="" />
+            <img
+              src="./public/images/TagbigTag.png"
+              class="absolute bottom-0 right-12"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- WHY CHOOSE US ENDS HERE -->
+    <!-- WHY CHOOSE US ENDS HERE -->
 
-  <!-- AMENITIES STARTS HERE -->
-  <div class="amenities">
-    <div class="double-bg flex justify-center py-20">
-      <div class="amenities-inner w-[75%]">
-        <div class="header-section text-center text-white">
-          <h2 class="font-jost mb-2">Amenities</h2>
+    <!-- AMENITIES STARTS HERE -->
+    <div class="amenities">
+      <div class="double-bg flex justify-center py-20">
+        <div class="amenities-inner w-[75%]">
+          <div class="header-section text-center text-white">
+            <h2 class="font-jost mb-2">Amenities</h2>
+            <h2 class="text-5xl font-antic-didone my-3">
+              Make Your Stay
+              <span class="font-beau-rivage text-[#AA642B]">Memorable</span>
+            </h2>
+            <div class="w-full flex justify-center">
+              <p class="font-jost w-[35%]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="amenities-carousel flex justify-center mt-10 relative">
+            <div
+              class="swiper-button-prev absolute top-1/2 -left-20 bg-[#AA642B] p-10 rounded-full text-black transform -translate-x-1/2 -translate-y-1/2"
+            ></div>
+            <div
+              class="swiper-button-next absolute top-1/2 -right-40 bg-[#AA642B] p-10 rounded-full text-black transform -translate-x-1/2 -translate-y-1/2"
+            ></div>
+            <div class="carousel-container w-full">
+              <div class="swiper amenities-swiper">
+                <div class="carousel swiper-wrapper">
+                  <!-- item starts here -->
+
+                  <div
+                    class="item p-8 bg-white w-[33.3333333333%] swiper-slide relative"
+                  >
+                    <div class="item-number w-fit absolute top-4 h-fit right-6">
+                      <h1
+                        class="font-antic-didone text-[#D6E3F3CC] text-[90px]"
+                      >
+                        01
+                      </h1>
+                    </div>
+                    <div
+                      class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"
+                    >
+                      <i class="fas fa-swimming-pool text-5xl text-white"></i>
+                    </div>
+                    <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">
+                      Swimming Pool
+                    </h2>
+                    <p class="font-jost text-[#818181] w-[90%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </p>
+                    <button class="text-[#818181] text-xl mt-7">
+                      Learn More <i class="fas fa-angle-right mr-3"></i>
+                    </button>
+                  </div>
+                  <!-- item ends here -->
+                  <!-- item starts here -->
+
+                  <div
+                    class="item p-8 bg-white w-[33.3333333333%] swiper-slide relative"
+                  >
+                    <div class="item-number w-fit absolute top-4 h-fit right-6">
+                      <h1
+                        class="font-antic-didone text-[#D6E3F3CC] text-[90px]"
+                      >
+                        01
+                      </h1>
+                    </div>
+                    <div
+                      class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"
+                    >
+                      <i class="fas fa-swimming-pool text-5xl text-white"></i>
+                    </div>
+                    <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">
+                      Swimming Pool
+                    </h2>
+                    <p class="font-jost text-[#818181] w-[90%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </p>
+                    <button class="text-[#818181] text-xl mt-7">
+                      Learn More <i class="fas fa-angle-right mr-3"></i>
+                    </button>
+                  </div>
+                  <!-- item ends here -->
+                  <!-- item starts here -->
+
+                  <div
+                    class="item p-8 bg-white w-[33.3333333333%] swiper-slide relative"
+                  >
+                    <div class="item-number w-fit absolute top-4 h-fit right-6">
+                      <h1
+                        class="font-antic-didone text-[#D6E3F3CC] text-[90px]"
+                      >
+                        01
+                      </h1>
+                    </div>
+                    <div
+                      class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"
+                    >
+                      <i class="fas fa-swimming-pool text-5xl text-white"></i>
+                    </div>
+                    <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">
+                      Swimming Pool
+                    </h2>
+                    <p class="font-jost text-[#818181] w-[90%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </p>
+                    <button class="text-[#818181] text-xl mt-7">
+                      Learn More <i class="fas fa-angle-right mr-3"></i>
+                    </button>
+                  </div>
+                  <!-- item ends here -->
+                  <!-- item starts here -->
+
+                  <div
+                    class="item p-8 bg-white w-[33.3333333333%] swiper-slide relative"
+                  >
+                    <div class="item-number w-fit absolute top-4 h-fit right-6">
+                      <h1
+                        class="font-antic-didone text-[#D6E3F3CC] text-[90px]"
+                      >
+                        01
+                      </h1>
+                    </div>
+                    <div
+                      class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"
+                    >
+                      <i class="fas fa-swimming-pool text-5xl text-white"></i>
+                    </div>
+                    <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">
+                      Swimming Pool
+                    </h2>
+                    <p class="font-jost text-[#818181] w-[90%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </p>
+                    <button class="text-[#818181] text-xl mt-7">
+                      Learn More <i class="fas fa-angle-right mr-3"></i>
+                    </button>
+                  </div>
+                  <!-- item ends here -->
+                  <!-- item starts here -->
+
+                  <div
+                    class="item p-8 bg-white w-[33.3333333333%] swiper-slide relative"
+                  >
+                    <div class="item-number w-fit absolute top-4 h-fit right-6">
+                      <h1
+                        class="font-antic-didone text-[#D6E3F3CC] text-[90px]"
+                      >
+                        01
+                      </h1>
+                    </div>
+                    <div
+                      class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"
+                    >
+                      <i class="fas fa-swimming-pool text-5xl text-white"></i>
+                    </div>
+                    <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">
+                      Swimming Pool
+                    </h2>
+                    <p class="font-jost text-[#818181] w-[90%]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod
+                    </p>
+                    <button class="text-[#818181] text-xl mt-7">
+                      Learn More <i class="fas fa-angle-right mr-3"></i>
+                    </button>
+                  </div>
+                  <!-- item ends here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container flex justify-center mt-9">
+            <button
+              class="font-antic-didone text-xl py-2.5 px-8 border border-white text-white hover-bg-[##AA642B] transition-all duration-200 ease-in-out"
+            >
+              Explore More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- AMENITIES ENDS HERE -->
+    <!-- SERVICES STARTS HERE -->
+    <div class="services-container flex justify-center py-20">
+      <div class="services w-[75%]">
+        <div class="header-section text-center text-black">
+          <h2 class="font-jost mb-2 text-[#AA642B]">Amenities</h2>
           <h2 class="text-5xl font-antic-didone my-3">
             Make Your Stay
             <span class="font-beau-rivage text-[#AA642B]">Memorable</span>
           </h2>
           <div class="w-full flex justify-center">
-            <p class="font-jost w-[35%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.</p>
+            <p class="font-jost w-[35%]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
         </div>
-        <div class="amenities-carousel flex justify-center">
-          <div class="carousel-container w-[75%]">
-            <div class="carousel">
-              <div class="item p-5 bg-white">
-                <div class="circle size-[87px] rounded-full bg-[#AA642B] flex justify-center items-center"><i
-                    class="fas fa-swimming-pool text-5xl text-white "></i></div>
-                <h2 class="font-antic-didone text-[#AA642B] text-2xl my-3">Swimming Pool</h2>
-                <p class="font-jost text-[#818181] w-[90%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod</p>
-                <button class="text-[#818181] text-xl ">Learn More <i class="fas fa-angle-right mr-3"></i></button>
-
-              </div>
-            </div>
+        <div class="flex justify-between mt-10 items-center">
+          <img src="./public/images/restar-image.jpg" alt="" />
+          <div class="text-section ml-36">
+            <h2 class="text-5xl text-[#AA642B] font-antic-didone">
+              Eat <span class="font-beau-rivage">&</span> Drink
+            </h2>
+            <p class="text-[#818181] text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <p class="font-antic-didone text-2xl text-[#AA642B] mt-9 mb-4">
+              Open Daily 07.00 - 00.00
+            </p>
+            <button class="text-xl font-antic-didone">
+              Read More <span class="ml-2.5">></span>
+            </button>
           </div>
-        </div>u
+        </div>
+        <div class="flex justify-between mt-10 items-center">
+          <div class="text-section mr-36">
+            <h2 class="text-5xl text-[#AA642B] font-antic-didone">
+              Eat <span class="font-beau-rivage">&</span> Drink
+            </h2>
+            <p class="text-[#818181] text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <p class="font-antic-didone text-2xl text-[#AA642B] mt-9 mb-4">
+              Open Daily 07.00 - 00.00
+            </p>
+            <button class="text-xl font-antic-didone">
+              Read More <span class="ml-2.5">></span>
+            </button>
+          </div>
+          <img src="./public/images/restar-image.jpg" alt="" />
+        </div>
+        <div class="w-full flex justify-center">
+          <button class="text-xl text-white bg-[#AA642B] py-5 px-10 mt-14">
+            View All
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- AMENITIES ENDS HERE -->
+    <!-- SERVICES ENDS HERE -->
 
+    <!-- BOOK NOW BANNER starts -->
+    <div class="book-now-banner relative">
+      <img src="./public/images/book-now-banner.jpg" alt="" />
+      <div
+        class="banner-text absolute top-0 left-64 h-full bg-[#AA642B] w-[35%] py-20"
+      >
+        <h2
+          class="font-antic-didone text-black text-8xl text-center leading-[120px]"
+        >
+          <span class="text-white font-beau-rivage">Book Now</span> & Enjoy
+          <br />
+          <span class="text-white font-beau-rivage">Luxury</span><br />
+          Like Never Before!
+        </h2>
+        
+        <div class="flex justify-center"><button
+          class="text-black font-antic-didone px-8 py-3 border border-black"
+        >
+          Book Your Stay
+        </button></div>
+      </div>
+    </div>
+    <!-- BOOK NOW BANNER ends-->
 
-  <!-- SWIPER JS SETUPS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./public/js/accordion.js"></script>
-  <script src="./public/js/swiper.js"></script>
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      direction: "horizontal",
-      loop: true,
-      autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-      },
-      draggable: true,
-      spaceBetween: 0,
-      slidesPerView: 1,
-      centeredSlides: true,
-      grabCursor: true,
-      pagination: false,
-      navigation: false,
-
-      on: {
-        slideChange: function () {
-          // Reset animation for all text elements
-          var texts = document.querySelectorAll(".text-wrapper");
-          texts.forEach(function (text) {
-            text.classList.remove("show");
-          });
-
-          // Add animation to text of current slide
-          var currentSlide = this.slides[this.activeIndex];
-          var textElements = currentSlide.querySelectorAll(".text-wrapper");
-          textElements.forEach(function (text) {
-            text.classList.add("show");
-          });
+    <!-- SWIPER JS SETUPS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./public/js/accordion.js"></script>
+    <script src="./public/js/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
         },
-      },
-    });
-  </script>
-</body>
+        draggable: true,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+        grabCursor: true,
+        pagination: false,
+        navigation: false,
 
+        on: {
+          slideChange: function () {
+            // Reset animation for all text elements
+            var texts = document.querySelectorAll(".text-wrapper");
+            texts.forEach(function (text) {
+              text.classList.remove("show");
+            });
+
+            // Add animation to text of current slide
+            var currentSlide = this.slides[this.activeIndex];
+            var textElements = currentSlide.querySelectorAll(".text-wrapper");
+            textElements.forEach(function (text) {
+              text.classList.add("show");
+            });
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

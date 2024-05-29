@@ -9,3 +9,19 @@ var swiper = new Swiper(".cards", {
         disableOnInteraction: false, // Keep autoplay running even after user interaction
       },
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.amenities-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay:{
+            delay:3000,
+
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
